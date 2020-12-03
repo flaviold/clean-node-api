@@ -10,7 +10,7 @@
 1. ✅ Cria uma conta para o usuário com os dados informados, substituindo a senha pela senha criptorafada
 1. ✅ Gera um token de acesso a partir do ID do usuário
 1. ✅ Atualiza os dados do usuário com o token de acesso gerado
-1. ⛔️ Retorna 200 com o token de acesso
+1. ✅ Retorna 200 com o token de acesso
 > ## Exceções:
 1. ✅ Retorna erro 404 se a API não existir
 1. ✅ Retorna erro 400 se **name**, **email**, **password** ou **passwordConfirmation** não forem fornecidos pelo client
