@@ -9,7 +9,7 @@ export class AuthMiddleware implements Middleware {
   ) {}
 
   async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
-    if (!httpRequest.headers || !httpRequest.headers['x-access-token']) {
+    if (!httpRequest.headers?.['x-access-token']) {
       return forbidden(new AccessDeniedError())
     }
     await this.loadAccountByToken.load(httpRequest.headers['x-access-token'])
